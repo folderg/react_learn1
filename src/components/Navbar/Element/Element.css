@@ -1,0 +1,43 @@
+
+.ElementText {
+    display:inline-block;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    bottom: 6px;
+    left: 35px;
+    transition: 0.1s;
+}
+.hovered .ElementText {
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    transition-delay: 0.1s;
+}
+
+.Element i {
+    font-size: 27px;
+    display: inline-block;
+    color: white;
+}
+.Element {
+    width: 300px;
+    height: 55px;
+    font-size: 20px;
+    display: block;
+}
+.hovered .Element {
+    width: 300px;
+    transition: 0.3s;
+    display: block;
+
+}
+
+.Element:hover {
+    background-color: rgb(45, 62, 109);
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.Element a {
+    display: block;
+    cursor: pointer;
+    padding: 13px 20px 20px 20px;
+}

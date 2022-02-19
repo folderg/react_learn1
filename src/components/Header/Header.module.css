@@ -1,0 +1,33 @@
+div {
+    display: block;
+}
+.Logotype, .Search, .HeaderButtons, .UserPad {
+    display: flex;
+}
+.Header {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-areas: "a .  b c d";
+    /* grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr ; 
+    68 1900// 125 250 190
+    */ 
+    grid-template-columns: 125px 1fr 250px 190px 260px;
+    grid-template-rows: 68px;
+}
+.Logotype{  
+    grid-area: a;
+}
+.Search{
+    grid-area: b;
+    grid-auto-flow: column;
+    grid-gap: 2px;
+
+}
+.HeaderButtons{
+    padding: 0px 35px 0px 31px;
+    display: grid;
+    grid-area: c;
+}
+.UserPad{
+    grid-area: d;
+}
