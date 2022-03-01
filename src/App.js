@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import s from './App.css'
+import s from './components/Nav_header/Nav_header.module.css'
+import Nav_header from './components/Nav_header/Nav_header'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Content from './components/Content/Content';
-import react, {useState, useEffect} from 'react';
 import { wait } from '@testing-library/user-event/dist/utils';
 
 
@@ -32,18 +32,25 @@ import { wait } from '@testing-library/user-event/dist/utils';
 // }
 function App() {
 
-  const [isHovered, setHover] = useState(false);
+  
+  
+  // const navbar = document.querySelector(".navbar");
+  //   function hoverOn(){
+  //     navbar.classList.toggle("hovered");
+  //   }
+  //   function hoverOff(){
+  //     navbar.classList.toggle("hovered");
+  // }
 
-
-  const hoverOn = () => { setHover(true);}
-  const hoverOff = () => { setHover(false);}
 
   return (
     <div className="app-wrapper">
       <div className="header" > <Header /></div>
       
-      <div className={`navbar ${isHovered? "hovered" : "" }`} onMouseEnter={hoverOn}
-      onMouseLeave={hoverOff}><Navbar /></div>
+      <div className="navbar">
+        <Nav_header />
+        <Navbar />
+      </div>
 
       <div className="content"> <Content /></div>
     </div>

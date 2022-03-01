@@ -1,5 +1,16 @@
-.Navbar {
-    transition: 1s;
+.Navbar_body {
     background-color: #21262d;
+    transition: 0.3s;
     height: 100vh;
+    width: 70px;
 }
+  /* //// hovered//// */
+.Navbar_body.hovered {
+  display: inline-block;
+    transition: 0.3s;
+    width: 300px;
+}
+.expand .Navbar_body {
+    transition: 0.3s;
+    width: 300px;
+ }

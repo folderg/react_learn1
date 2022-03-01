@@ -1,0 +1,22 @@
+
+.Nav_button {
+    display: inline-block;
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    right: 1px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    background-color: #171717;
+    border-radius: 0 0 0 5px;
+}
+
+.Nav_button i{
+    line-height: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    color: #abb4be;
+    font-size: 20px;
+}
