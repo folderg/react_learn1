@@ -5,7 +5,6 @@ import Nav_header from './components/Nav_header/Nav_header'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Content from './components/Content/Content';
-import { wait } from '@testing-library/user-event/dist/utils';
 
 
 // const sidebar_btn  = document.querySelector(".sidebar-btn");
@@ -52,7 +51,9 @@ function App() {
         <Navbar />
       </div>
 
-      <div className="content"> <Content /></div>
+      <div className="content"> 
+        <Content />
+        </div>
     </div>
   );
 }

@@ -37,11 +37,11 @@
 
 }
 
-/* .Element:hover {
+.Element:hover {
     background-color: rgb(45, 62, 109);
     transition: 1s;
     transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
+}
 .Element a {
     display: block;
     cursor: pointer;
