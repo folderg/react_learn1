@@ -1,5 +1,18 @@
 import React from "react";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+} from "chart.js";
 import { Line } from "react-chartjs-2";
+
+const chart = {
+}
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
+
 
 const Chart = () => {
   const lineChartData = {
@@ -24,11 +37,14 @@ const Chart = () => {
   };
 
   return (
-    <Line
+  <div style={chart}>
+      <Line
       type="line"
-      width={160}
+      width={100}
       height={60}
       options={{
+        maintainAspectRatio: false,
+        responsive: true,
         title: {
           display: true,
           text: "COVID-19 Cases of Last 6 Months",
@@ -41,6 +57,8 @@ const Chart = () => {
       }}
       data={lineChartData}
     />
+  </div>
+    
   );
 };
 export default Chart;
