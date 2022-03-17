@@ -7,7 +7,7 @@ import Chart1 from './Chart1';
 
 
 const myStyle = {
-    backgroundColor: "red"
+    backgroundColor: "green"
 
 }
 
