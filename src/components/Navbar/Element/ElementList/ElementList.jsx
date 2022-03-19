@@ -1,13 +1,18 @@
 import './ElementList.css';
 
 const ElementList = (props) => {
-    return (
+    const data =['ddsddd','asdad','asdad'];
+    const listItems = props.items.map((d) => 
         <li className="ElementList">
             <a href="#">
-                <div className="ElementListText">asdasd</div>
+                <div className="ElementListText">{d}</div>
             </a>
-            
         </li>
+    );
+    return (
+        <div >
+            {listItems}            
+        </div>
         
     )
 }

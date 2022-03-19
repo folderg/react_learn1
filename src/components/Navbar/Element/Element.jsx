@@ -7,25 +7,18 @@ const Element = (props) => {
     const navbar = document.querySelector(".navbar");
     
     const [isClicked, setClick] = useState(false);
-    const clickOn = () => { setClick(true);}
-    const clickOff = () => { setClick(false);}
     
-    const zxc = () => {
-        if(isClicked)
-            clickOff();
-        else
-            clickOn();
+    const extendToggle = () => {
+        setClick(!isClicked);
     }
     
     return (
         <li className={`Element ${isClicked? "extended" : "" }`}>
-            <a href="#" onClick={zxc}>
-                <i class={props.icon} aria-hidden="true"></i>
+            <a href="#" onClick={extendToggle}>
+                <i className={props.icon} ></i>
                 <div className="ElementText">{props.text}</div>
             </a>
-            <ElementList />
-            <ElementList />
-            <ElementList />
+            <ElementList items={props.items}/>
         </li>
         
     )
