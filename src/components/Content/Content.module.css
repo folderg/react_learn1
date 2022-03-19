@@ -2,6 +2,7 @@
     width: 717px;
 }
 .Content {
+    transition: 0s !important;
     display: grid;
     padding: 30px;
     grid-template-rows: 1fr 1fr;

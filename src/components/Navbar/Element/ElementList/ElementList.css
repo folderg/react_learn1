@@ -1,0 +1,10 @@
+.ElementList {
+    display: none;
+    background: #191c21;
+}
+.ElementList:hover {
+    color: blue;
+}
+.Element.extended .ElementList {
+    display: block;
+}

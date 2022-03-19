@@ -15,6 +15,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
 
 
 const Chart = () => {
+   
   const lineChartData = {
     labels: ["October", "November", "December"],
     datasets: [
@@ -45,6 +46,12 @@ const Chart = () => {
       options={{
         maintainAspectRatio: false,
         responsive: true,
+        animations: {
+          tension: {
+            duration: 0
+          }
+        },
+        animation: false,
         title: {
           display: true,
           text: "COVID-19 Cases of Last 6 Months",
