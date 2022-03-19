@@ -4,7 +4,7 @@ const ElementList = (props) => {
     return (
         <li className="ElementList">
             <a href="#">
-                <div className="ElementText">asdasd</div>
+                <div className="ElementListText">asdasd</div>
             </a>
             
         </li>

@@ -1,10 +1,28 @@
 .ElementList {
+    
+    transition: 0.3s;
     display: none;
+    width: 70px;
     background: #191c21;
 }
-.ElementList:hover {
-    color: blue;
+.ElementListText {
+    display:inline-block;
+    color: #abb4be;
+    position: relative;
+    bottom: 6px;
+    left: 35px;
 }
-.Element.extended .ElementList {
+.ElementListText:hover {
+    transition: 0.1s;
+    color: rgb(117, 117, 255);
+}
+.hovered .Element.extended .ElementList {
+    transition: 0.3s;
     display: block;
+    width: 300px;
+}
+.expand .Element.extended .ElementList {
+    transition: 0.3s;
+    display: block;
+    width: 300px;
 }
