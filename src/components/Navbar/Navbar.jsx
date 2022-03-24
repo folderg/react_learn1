@@ -9,13 +9,13 @@ const Navbar = (props) => {
     const hoverOn = () => { setHover(true);}
     const hoverOff = () => { setHover(false);}
 
+    const listElements = props.nav_elements.map((d,i) => 
+        <Element key={i} icon={d.icon} text={d.text} items={d.items}/>
+    );
     return (
         <div className={`Navbar_body ${isHovered? "hovered" : "" }`} onMouseEnter={hoverOn}
         onMouseLeave={hoverOff}>
-            
-            <Element icon="bx bx-cart-alt" text="asdasdas" items={['item1','item2','item3','item4']}/>
-            <Element icon="bx bxs-leaf" text="zxcz" items={['item1','item2','item3','item4']}/>
-            <Element icon="bx bxl-unity" text="asdhgfasdas" items={['item1','item2','item3','item4']}/>
+            {listElements}
         </div>
     )
 }

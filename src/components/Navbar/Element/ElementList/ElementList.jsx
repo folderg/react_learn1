@@ -1,12 +1,9 @@
 import './ElementList.css';
 
 const ElementList = (props) => {
-    const data =['ddsddd','asdad','asdad'];
-    const listItems = props.items.map((d) => 
-        <li className="ElementList">
-            <a href="#">
-                <div className="ElementListText">{d}</div>
-            </a>
+    const listItems = props.items.map((d, i) => 
+        <li key={i} className="ElementList">
+            <a  href="#" className="ElementListText">{d}</a>
         </li>
     );
     return (

@@ -5,42 +5,31 @@ import Nav_header from './components/Nav_header/Nav_header'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Content from './components/Content/Content';
+import NavbarContainer from './components/Navbar/NavbarContainer';
+import {Route} from "react-router-dom";
 
 
-// const sidebar_btn  = document.querySelector(".sidebar-btn");
-// const navbar  = document.querySelector("navbar");
-
-// sidebar_btn.addEventListener("click", () => {
-//   document.body.classList.toggle("shrink");
-//   console.log('clicked');
-// });
-
-// navbar.addEventListener("mouseover", (e) => {
-//   navbar.classList.toggle("hovered");
-// });
-  
-// navbar.addEventListener("mouseout", () => {
-//   navbar.classList.toggle("hovered");
-// });
-// const func1 = (e) => {
-//   // navbar.classList.toggle("hovered");
-//   // navbar.toggleAttribute('hovered');
-//   // setBgColour("#fafafa");
-//   this.setState({ isActiveClass: true });
-//   console.log('log');
-// }
 function App() {
 
   
   
-  // const navbar = document.querySelector(".navbar");
-  //   function hoverOn(){
-  //     navbar.classList.toggle("hovered");
-  //   }
-  //   function hoverOff(){
-  //     navbar.classList.toggle("hovered");
-  // }
-
+  const nav_elements = [
+    {
+        icon: 'bx bx-cart-alt',
+        text: 'asdasda',
+        items: ['item1','item2','item3','item4']
+    },
+    {
+        icon: 'bx bxs-leaf',
+        text: 'asd',
+        items: ['item1','item2','item3','item4']
+    },
+    {
+        icon: 'bx bxl-unity',
+        text: 'zxcza',
+        items: ['item1','item2','item3','item4']
+    }        
+  ]
 
   return (
     <div className="app-wrapper">
@@ -48,7 +37,10 @@ function App() {
       
       <div className="navbar">
         <Nav_header />
-        <Navbar />
+        {/* <Navbar nav_elements={nav_elements}/> */}
+        <NavbarContainer  />
+
+        {/* <Route path='/dialogs' render={ () => <NavbarContainer /> }/> */}
       </div>
 
       <div className="content"> 

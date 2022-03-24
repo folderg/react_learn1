@@ -1,11 +1,11 @@
 .ElementList {
-    
     transition: 0.3s;
     display: none;
     width: 70px;
     background: #191c21;
 }
 .ElementListText {
+    text-decoration: none;
     display:inline-block;
     color: #abb4be;
     position: relative;
@@ -14,7 +14,7 @@
 }
 .ElementListText:hover {
     transition: 0.1s;
-    color: rgb(117, 117, 255);
+    color: rgb(0, 132, 209);
 }
 .hovered .Element.extended .ElementList {
     transition: 0.3s;
