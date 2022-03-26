@@ -10,7 +10,6 @@ html{
   "navbar content";
   grid-template-rows: 68px 1fr;
   grid-template-columns: 1fr 30fr;
-  /* grid-gap: 10px; */
   transition: 0.3s;
 }
 .header {
@@ -21,13 +20,6 @@ html{
 }
 
 .navbar {
-  /* bottom: 0;
-  left: 0px;
-  padding-bottom: 50px;
-  position: fixed;
-  top: 0px;
-  transition: 0.3s;
-  height: 100%; */
   
   transition: 0.3s;
   position: relative;
@@ -35,7 +27,6 @@ html{
   width: 70px;
 }
 
-/* //// hovered//// */
 .navbar.hovered {
   transition: 0.3s;
   width: 300px;
