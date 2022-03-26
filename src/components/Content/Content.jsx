@@ -2,7 +2,6 @@ import './test.css'
 import s from './Content.module.css'
 import React from "react";
 
-// import Chart from './Chart/Chart';
 import Chart from './Chart/ChartContainer';
 
 
@@ -14,7 +13,6 @@ const myStyle = {
 const Content = (props) => {
     return (
         <div className={s.Content}>
-            {/* <div className={s.test}>11111111111111111</div> */}
             <div style={myStyle}>
                 <Chart />
             </div>

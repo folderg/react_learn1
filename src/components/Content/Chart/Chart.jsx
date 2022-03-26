@@ -39,7 +39,6 @@ const Chart = (props) => {
 
   return (
   <div style={chart}>
-      {/* <p>{props.charts}</p> */}
       <Line
       type="line"
       width={100}
