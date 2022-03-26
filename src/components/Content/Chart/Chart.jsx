@@ -14,7 +14,7 @@ const chart = {
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
 
 
-const Chart = () => {
+const Chart = (props) => {
    
   const lineChartData = {
     labels: ["October", "November", "December"],
@@ -39,6 +39,7 @@ const Chart = () => {
 
   return (
   <div style={chart}>
+      {/* <p>{props.charts}</p> */}
       <Line
       type="line"
       width={100}

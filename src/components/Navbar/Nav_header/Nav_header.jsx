@@ -13,7 +13,6 @@ const Nav_header = (props) => {
     function changeGrid(){
         setClick();
         navbar.classList.toggle("expand");
-        console.log('test');
     }
     
     return (
@@ -24,11 +23,6 @@ const Nav_header = (props) => {
             <div className={s.Nav_button} onClick={changeGrid}>
                 <i class="bx bx-menu"></i>
             </div>
-            
-            {/* <span>Navigation</span>
-            <div className={s.Nav_button} onClick={changeGrid}>
-                <i class="bx bx-menu"></i>
-            </div> */}
         </div>        
         
     )

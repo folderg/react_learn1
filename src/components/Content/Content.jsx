@@ -2,8 +2,8 @@ import './test.css'
 import s from './Content.module.css'
 import React from "react";
 
-import Chart from './Chart/Chart';
-import Chart1 from './Chart/Chart1';
+// import Chart from './Chart/Chart';
+import Chart from './Chart/ChartContainer';
 
 
 const myStyle = {

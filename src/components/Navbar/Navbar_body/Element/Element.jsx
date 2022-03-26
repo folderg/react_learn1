@@ -1,5 +1,5 @@
 import ElementList from './ElementList/ElementList';
-import react, {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 import './Element.css'
 
