@@ -7,6 +7,6 @@ let mapStateToProps = (state) => {
         charts: state.charts.charts
     }
 }
-const ChartContainer = connect(mapStateToProps,)(Chart);
+const ChartContainer = connect(mapStateToProps)(Chart);
 
 export default ChartContainer;

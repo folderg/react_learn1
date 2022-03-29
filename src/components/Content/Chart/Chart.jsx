@@ -5,13 +5,15 @@ import {
   LinearScale,
   PointElement,
   LineElement,
+  Legend,
+  defaults
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
 const chart = {
 }
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement);
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Legend);
 
 
 const Chart = (props) => {
@@ -28,7 +30,7 @@ const Chart = (props) => {
       },
       {
         data: [1216410, 1371390, 1477380],
-        label: "Deaths",
+        label: "Deaths" ,
         borderColor: "#ff3333",
         backgroundColor: "rgba(255, 0, 0, 0.5)",
         fill: true,
@@ -37,6 +39,7 @@ const Chart = (props) => {
     ]
   };
 
+  
   return (
   <div style={chart}>
       <Line
@@ -44,14 +47,17 @@ const Chart = (props) => {
       width={100}
       height={60}
       options={{
+        animations: {
+          duration: 0, // general animation time
+        },
+        animations: false,
+
+        hover: {
+          animationDuration: 0, // duration of animations when hovering an item
+        },
+        responsiveAnimationDuration: 0, // animation duration after a resize
         maintainAspectRatio: false,
         responsive: true,
-        animations: {
-          tension: {
-            duration: 0
-          }
-        },
-        animation: false,
         title: {
           display: true,
           text: "COVID-19 Cases of Last 6 Months",

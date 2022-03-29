@@ -20,8 +20,10 @@ html{
 }
 
 .navbar {
+  bottom: 0;
+  top: 0;
   
-  transition: 0.3s;
+  transition: 1.4s;
   position: relative;
   grid-area: navbar;
   width: 70px;
@@ -33,6 +35,6 @@ html{
 }
 
 .navbar.expand {
-  transition: 0.3s;
+  transition: 1.4s;
   width: 300px;
 }

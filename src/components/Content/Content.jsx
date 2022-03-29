@@ -6,7 +6,6 @@ import Chart from './Chart/ChartContainer';
 
 
 const myStyle = {
-    backgroundColor: "green"
 
 }
 

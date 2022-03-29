@@ -1,11 +1,12 @@
 import Navbar_bodyContainer from "./Navbar_body/Navbar_bodyContainer";
 import Nav_header from "./Nav_header/Nav_header";
 
-const Navbar = (props) => {
+
+const Navbar = (props) => {    
     return (
-        <div >
+        <div className='Navbar'>
             <Nav_header />
-            <Navbar_bodyContainer />
+            <Navbar_bodyContainer/>
         </div>
     )
 }

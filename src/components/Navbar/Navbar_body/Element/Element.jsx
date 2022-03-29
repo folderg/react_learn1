@@ -3,9 +3,7 @@ import {useState} from 'react';
 
 import './Element.css'
 
-const Element = (props) => {
-    const navbar = document.querySelector(".navbar");
-    
+const Element = (props) => {    
     const [isClicked, setClick] = useState(false);
     
     const extendToggle = () => {

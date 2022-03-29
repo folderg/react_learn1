@@ -1,10 +1,19 @@
 .Navbar_body {
+  
+
   position: fixed;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #21262d;
   transition: 0.3s;
-  height: 100%;
   width: 70px;
+
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 118px;
+
 }
   /* //// hovered//// */
 .Navbar_body.hovered {
