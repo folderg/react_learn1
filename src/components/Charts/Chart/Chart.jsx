@@ -12,6 +12,11 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
+// require("./js/js-fluid-meter.js");
+
+
+
+
 const chart = {
 }
 
@@ -19,8 +24,19 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Legend, 
 
 
 const Chart = (props) => {
+  
    
 const lineChartData = {
+    
+
+
+
+
+
+
+
+
+
     labels: ["October", "November", "December"],
     datasets: [
       {
@@ -61,6 +77,7 @@ const options = {
       options={options}
       data={lineChartData}
     />
+
     
   );
 };

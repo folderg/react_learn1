@@ -1,0 +1,8 @@
+canvas {
+    height: 100px;
+}
+.content {
+    
+    max-width: 99%;
+    transition: 0.3s;
+}

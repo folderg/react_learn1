@@ -3,6 +3,8 @@ import s from './Content.module.css'
 import React from "react";
 
 import Chart from './Chart/ChartContainer';
+import Chart1 from './Chart/Chart2';
+
 
 
 const myStyle = {
@@ -18,9 +20,11 @@ const Content = (props) => {
             <div style={myStyle}>
                 <Chart />
             </div>
-            <div style={myStyle}>1
+            <div style={myStyle}>
+                <Chart1 />
             </div>
-            <div style={myStyle}>1
+            <div style={myStyle}>
+                <Chart />
             </div>
         </div>
     )
