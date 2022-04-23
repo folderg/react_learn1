@@ -1,0 +1,100 @@
+html .bg-secondary, html .background-color-secondary {
+    background-color: #E36159 !important;
+}
+.widget-summary .summary-icon {
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    font-size: 51.2px;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 55px;
+}
+.widget-summary .widget-summary-col {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+
+.widget-summary .widget-summary-col.widget-summary-col-icon {
+    width: 1%;
+}
+.widget-summary .summary-footer {
+    padding: 5px 0 0;
+    border-top: 1px dotted #ddd;
+    text-align: right;
+}
+.widget-summary .summary .title {
+    margin: 0;
+    font-size: 14.4px;
+    font-size: .9rem;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.widget-summary .summary .info {
+    font-size: 13.6px;
+    font-size: .85rem;
+}
+.widget-summary .summary {
+    min-height: 65px;
+    word-break: break-all;
+}
+.widget-summary .summary .amount {
+    margin-right: .2em;
+    font-weight: 600;
+    color: #333;
+    vertical-align: middle;
+    font-size: 22.4px;
+    font-size: 1.4rem;
+}
+.card-body {
+    
+    background: #fdfdfd;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+}
+
+html .card{    
+    border: none;
+}
+
+html .card-featured-left {
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: rgb(204, 204, 204);
+}
+
+html .card-featured-secondary {
+    border-color: #E36159;
+}
+
+html .card-featured-tertiary {
+    border-color: #2BAAB1;
+    border-top-color: rgb(43, 170, 177);
+    border-right-color: rgb(43, 170, 177);
+    border-bottom-color: rgb(43, 170, 177);
+    border-left-color: rgb(43, 170, 177);
+}
+html .card-featured-primary {
+    border-color: #0088CC;
+    border-top-color: rgb(0, 136, 204);
+    border-right-color: rgb(0, 136, 204);
+    border-bottom-color: rgb(0, 136, 204);
+    border-left-color: rgb(0, 136, 204);
+}
+html .card-featured-quaternary {
+    border-color: #383f48;
+    border-top-color: rgb(56, 63, 72);
+    border-right-color: rgb(56, 63, 72);
+    border-bottom-color: rgb(56, 63, 72);
+    border-left-color: rgb(56, 63, 72);
+}
+html .bg-tertiary, html .background-color-tertiary {
+    background-color: #2BAAB1 !important;
+}
+html .bg-quaternary, html .background-color-quaternary {
+    background-color: #383f48 !important;
+}

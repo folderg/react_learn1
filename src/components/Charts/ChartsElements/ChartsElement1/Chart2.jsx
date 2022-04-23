@@ -14,7 +14,7 @@ class Chart extends Component {
   render() {
     const radius = 50;
     const interpolate = interpolateRgb(this.startColor, this.endColor);
-    const fillColor =  "#cccccc"
+    const fillColor =  "#0d6efd"
     const gradientStops = [
       {
         key: "0%",
@@ -49,8 +49,8 @@ class Chart extends Component {
           value={this.state.value}
           percent="%"
           textSize={1}
-          textOffsetX={0}
-          textOffsetY={0}
+          textOffsetX={3}
+          textOffsetY={8}
           textRenderer={props => {
             const value = Math.round(props.value);
             const radius = Math.min(props.height / 2, props.width / 2);

@@ -1,6 +1,7 @@
 .Navbar_header {
+    top:70px;
     transition: 0.3s;
-    position: relative;
+    position: fixed;
     height: 50px;
     width: 70px;
     background-color: #21262d;
@@ -11,13 +12,13 @@
 
 .expand .navigation {
     width: 220px;
-    display: inline-block;
+    display: inline-flex;
     color: #465162;
 }
 .navigation {
     transition: 0.3s;
     width: 1px;
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     height: 50px;
     width: 0px;
@@ -25,4 +26,7 @@
 }
 .navigation p {
     margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle ;
 }

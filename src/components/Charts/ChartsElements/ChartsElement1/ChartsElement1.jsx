@@ -2,15 +2,16 @@
 import Chart1 from './Chart1';
 import Chart2 from './Chart2';
 
+import s from './ChartsElement1.module.css';
 
 
 const ChartsElement1 = (props) => {
     return (
-        <div  style={{height: '100%', width: '100%'}}>
-            <div style={{width: '63%', height: '100%', display: 'inline-block'}}>
+        <div  className={s.chart}>
+            <div className={s.LineGraph}>
                 <Chart1 />
             </div>
-            <div style={{width: '35%', display: 'inline-block', verticalAlign: 'top;', marginTop: '35px'}}>
+            <div className={s.LiquidGraph}>
                 <Chart2 />
             </div>
         </div>

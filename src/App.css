@@ -11,12 +11,17 @@ html{
   grid-template-rows: 68px 1fr;
   grid-template-columns: 1fr 30fr;
   transition: 0.3s;
+  background-color: #ecedf0;
 }
 .header {
+  width: 100%;
+  z-index: 999;
+  position: fixed;
   grid-area: header;
 }
 .content {
   grid-area: content;
+  max-width: 100%;
 }
 
 .navbar {

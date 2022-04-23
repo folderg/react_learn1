@@ -29,7 +29,8 @@ const  Chart1 = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top',
+        display: false,
+        position: 'bottom',
       },
       title: {
         display: true,
@@ -44,13 +45,13 @@ const  Chart1 = () => {
       {
         label: 'Dataset 1',
         data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: '#cccccc',
+        borderColor: '#0d6efd',
         backgroundColor: 'white',
       },
       {
         label: 'Dataset 22',
         data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: '#cccccc',
+        borderColor: '#0d6efd',
         backgroundColor: 'white',
       },
     ],

@@ -2,10 +2,18 @@
     width: 717px;
 }
 .Charts {
-    transition: 0s !important;
+    transition: 0s;
     display: grid;
     padding: 50px;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 47% 47%;
-    grid-gap: 10px 5%;
+    /* grid-template-columns: 47% 47%; */
+    grid-template-rows: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(2, minmax(300px,1fr));
+    grid-gap: 5px 20px;
+    background-color: #ecedf0;
+}
+
+@media (max-width: 750px){
+    .Charts{
+        grid-template-columns: 300px;
+    }
 }
