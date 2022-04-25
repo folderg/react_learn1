@@ -5,6 +5,7 @@ import Chart from './Chart/Chart';
 import Chart1 from './Chart/Chart1';
 import Chart2 from './Chart/Chart2';
 import Chart3 from './Chart/Chart3_0';
+import Chart3_1 from './Chart/Chart3_1';
 
 import ChartsElement1 from './ChartsElements/ChartsElement1/ChartsElement1';
 import ChartsElement2 from './ChartsElements/ChartsElement2/ChartsElement2';
@@ -27,12 +28,20 @@ const Charts = (props) => {
             <div style={myStyle}>
                 <Chart1 />
             </div>
+
             <div style={myStyle}>
                 <Chart2 />
+            </div>
+                
+                
             <div>
+                <Chart3 />
+            </div>
 
+            <div>
+                <Chart3_1 />
             </div>
-            </div>
+
             <div className='card border-primary'>
                 <div className="card-header">123</div>
                 <div className="card-body">11111</div>

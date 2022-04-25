@@ -58,6 +58,16 @@ export const data = {
       backgroundColor: 'rgb(53, 162, 235)',
       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
     },
+    {
+      label: 'Books read',
+            data: [3, 6, 2, 7, 4],
+            borderColor: 'crimson',
+            borderWidth: 5,
+            backgroundColor: 'crimson',
+            cubicInterpolationMode: 'monotone',
+            fill: true // залили линейный график цветом
+
+    },
   ],
 };
 
