@@ -4,7 +4,7 @@ import Charts from './Charts';
 
 let mapStateToProps = (state) => {
     return {
-        charts: state.charts.charts
+        charts: state.charts
     }
 }
 const ChartContainer = connect(mapStateToProps)(Charts);

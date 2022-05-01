@@ -15,14 +15,14 @@ import ChartsElement3 from './ChartsElements/ChartsElement3/ChartsElement3';
 import Button from 'react-bootstrap/Button';
 
 const myStyle = {
-    maxHeight: '500px'
+    minHeight: '300px'
 
 }
 
 const Charts = (props) => {
     return (
         <div className={s.Charts}>
-            <ChartsElement1 charts= {props.charts} />
+            <ChartsElement1 chartsData={props.charts.chartsData1}/>
             <ChartsElement2 />
 
             <div style={myStyle}>
@@ -39,7 +39,7 @@ const Charts = (props) => {
             </div>
 
             <div>
-                <Chart3_1 />
+                {/* <Chart3_1 /> */}
             </div>
 
             <div className='card border-primary'>

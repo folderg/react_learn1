@@ -8,6 +8,7 @@
   transition: 0.3s;
   width: 70px;
 
+  z-index: 9999;
 
   bottom: 0;
   left: 0;

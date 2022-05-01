@@ -9,10 +9,10 @@ const ChartsElement1 = (props) => {
     return (
         <div  className={s.chart}>
             <div className={s.LineGraph}>
-                <Chart1 />
+                <Chart1 salesData={props.chartsData.salesData}  />
             </div>
             <div className={s.LiquidGraph}>
-                <Chart2 />
+                <Chart2 salesGoal={props.chartsData.salesGoal} />
             </div>
         </div>
     )

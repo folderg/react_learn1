@@ -11,6 +11,7 @@ import {
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import faker from '@faker-js/faker';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 ChartJS.register(
   CategoryScale,
@@ -23,7 +24,7 @@ ChartJS.register(
 );
 
 
-const  Chart1 = () => {
+const  Chart1 = (props) => {
   const options = {
     maintainAspectRatio: false,
     responsive: true,
@@ -59,8 +60,7 @@ const  Chart1 = () => {
 
 
   return (
-    
-      <Line options={options} data={data} />
+    <Line options={options} data={props.salesData} />
    );
 }
 

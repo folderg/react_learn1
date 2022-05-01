@@ -6,7 +6,7 @@ import LiquidFillGauge from "react-liquid-gauge";
 
 class Chart extends Component {
   state = {
-    value: 50
+    value: this.props.salesGoal
   };
   startColor = "#6495ed"; // cornflowerblue
   endColor = "#dc143c"; // crimson
