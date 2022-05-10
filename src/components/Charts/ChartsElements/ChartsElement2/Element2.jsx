@@ -12,7 +12,7 @@ const Element = (props) => {
                             <div className="summary">
                                 <h4 className="title">Total Profit</h4>
                                 <div className="info">
-                                    <strong className="amount">$ 14,890.30</strong>
+                                    <strong className="amount">$ {Intl.NumberFormat('en-US', { minimumFractionDigits: 2 }).format(props.value)}</strong>
                                 </div>
                             </div>
                             <div className="summary-footer">

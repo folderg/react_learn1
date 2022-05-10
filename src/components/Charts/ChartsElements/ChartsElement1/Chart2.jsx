@@ -78,7 +78,7 @@ class Chart extends Component {
           gradient
           gradientStops={gradientStops}
           circleStyle={{
-            fill: '#f2f2f2'
+            fill: '#e9ecef'
           }}
           waveStyle={{
             fill: fillColor

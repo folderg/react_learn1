@@ -3,6 +3,7 @@ import React from "react";
 
 import Chart from './Chart/Chart';
 import Chart1 from './Chart/Chart1';
+import RealtimeChart from './Chart/RealtimeChart';
 import Chart2 from './Chart/Chart2';
 import Chart3 from './Chart/Chart3_0';
 import Chart3_1 from './Chart/Chart3_1';
@@ -23,10 +24,10 @@ const Charts = (props) => {
     return (
         <div className={s.Charts}>
             <ChartsElement1 chartsData={props.charts.chartsData1}/>
-            <ChartsElement2 />
-
+            <ChartsElement2 chartsData={props.charts.chartsData2}/>
+            
             <div style={myStyle}>
-                <Chart1 />
+                <ChartsElement3 chartsData={props.charts.chartsData3}/>
             </div>
 
             <div style={myStyle}>
@@ -40,6 +41,7 @@ const Charts = (props) => {
 
             <div>
                 {/* <Chart3_1 /> */}
+                <RealtimeChart />
             </div>
 
             <div className='card border-primary'>

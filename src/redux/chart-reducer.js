@@ -1,5 +1,6 @@
 import faker from '@faker-js/faker';
 
+const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
 let initialState = {
     chartsData1:{
@@ -9,13 +10,13 @@ let initialState = {
                 {
                   label: 'Dataset 1',
                   data:  ['January', 'February', 'March', 'April', 'May', 'June', 'July'].map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                  borderColor: '#0d6efd',
+                  borderColor: "#0d6efd",
                   backgroundColor: 'white',
                 },
                 {
                   label: 'Dataset 2',
                   data:  ['January', 'February', 'March', 'April', 'May', 'June', 'July'].map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                  borderColor: '#0d6efd',
+                  borderColor: '#adb5bd',
                   backgroundColor: 'white',
                 },
               ],
@@ -23,24 +24,44 @@ let initialState = {
         salesGoal: 77,
     },
     chartsData2:{
-        salesData:{
-            labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-            datasets: [
-                {
-                  label: 'Dataset 1',
-                  data:  ['January', 'February', 'March', 'April', 'May', 'June', 'July'].map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                  borderColor: '#0d6efd',
-                  backgroundColor: 'white',
-                },
-                {
-                  label: 'Dataset 2',
-                  data:  ['January', 'February', 'March', 'April', 'May', 'June', 'July'].map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                  borderColor: '#0d6efd',
-                  backgroundColor: 'white',
-                },
-              ],
-        },
+        supportQuestions: 1281,
+        totalProfit: 14890.30,
+        todaysOrder: 38,
+        todayVisitors: 3765,
     },
+    chartsData3:{
+        labels,
+        datasets: [
+          {
+            label: 'Dataset 1',
+            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+            borderColor: 'rgb(255, 99, 132)',
+            fill: 'start',
+            backgroundColor: 'rgba(255, 99, 32, 0.1)',
+          },
+          {
+            label: 'Dataset 2',
+            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+            fill: 'start',
+            borderColor: 'rgb(53, 162, 235)',
+            backgroundColor: 'rgba(53, 162, 235, 0.1)', 
+          },
+          {
+            label: 'Dataset 3',
+            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+            borderColor: 'rgb(255, 199, 132)',
+            fill: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+          },
+          {
+            label: 'Dataset 4',
+            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+            borderColor: 'rgb(25, 99, 132)',
+            fill: 'start',
+            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+          },
+        ],
+      }
 
 };
 

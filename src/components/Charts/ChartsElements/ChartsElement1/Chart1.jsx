@@ -39,24 +39,6 @@ const  Chart1 = (props) => {
       },
     },
   };
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: '#0d6efd',
-        backgroundColor: 'white',
-      },
-      {
-        label: 'Dataset 22',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: '#0d6efd',
-        backgroundColor: 'white',
-      },
-    ],
-  };
 
 
   return (

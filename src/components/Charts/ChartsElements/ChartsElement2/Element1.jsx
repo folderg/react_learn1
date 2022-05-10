@@ -12,7 +12,7 @@ const Element = (props) => {
                             <div className="summary">
                                 <h4 className="title">Support Questions</h4>
                                 <div className="info">
-                                    <strong className="amount">1281</strong>
+                                    <strong className="amount">{props.value}</strong>
                                     <span className="text-primary">(14 unread)</span>
                                 </div>
                             </div>

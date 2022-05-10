@@ -3,7 +3,7 @@ import Element2 from './Element2';
 import Element3 from './Element3';
 import Element4 from './Element4';
 
-import './test.css';
+import './style.css';
 
 
 const style = {
@@ -19,10 +19,10 @@ const style = {
 const ChartsElement2 = (props) => {
     return (
         <div style={style}>
-            <Element1 />
-            <Element2 />
-            <Element3 />
-            <Element4 />
+            <Element1 value={props.chartsData.supportQuestions} />
+            <Element2 value={props.chartsData.totalProfit} />
+            <Element3 value={props.chartsData.todaysOrder} />
+            <Element4 value={props.chartsData.todayVisitors} />
             
         </div>
         
