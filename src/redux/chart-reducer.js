@@ -2,6 +2,14 @@ import faker from '@faker-js/faker';
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
+var TICKINTERVAL =4864000;// 864000*5;
+let XAXISRANGE = 777600000;
+let XLENGTH = XAXISRANGE/TICKINTERVAL*1.1;
+var SPEED = 1000;
+
+
+
+
 let initialState = {
     chartsData1:{
         salesData:{
@@ -61,7 +69,57 @@ let initialState = {
             backgroundColor: 'rgba(255, 99, 132, 0.1)',
           },
         ],
-      }
+      },
+      chartsData4:{
+
+        series: [{
+			data: [{x:12, y:22}]
+        }],
+        options: {
+          chart: {
+            id: 'realtime',
+            height: 350,
+            type: 'line',
+            animations: {
+              enabled: true,
+              easing: 'linear',
+              dynamicAnimation: {
+                speed: SPEED
+              }
+            },
+            toolbar: {
+              show: false
+            },
+            zoom: {
+              enabled: false
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+          //  curve: 'smooth'
+          },
+          title: {
+            text: 'Dynamic Updating Chart',
+            align: 'left'
+          },
+          markers: {
+            size: 0
+          },
+          xaxis: {
+            type: 'datetime',
+            range: XAXISRANGE,
+          },
+          yaxis: {
+            max: 100,
+            min: 0
+          },
+          legend: {
+            show: false
+          },
+        },
+       }
 
 };
 

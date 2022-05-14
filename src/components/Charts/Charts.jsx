@@ -31,17 +31,17 @@ const Charts = (props) => {
             </div>
 
             <div style={myStyle}>
-                <Chart2 />
+                <RealtimeChart chartsData={props.charts.chartsData4} />                
             </div>
                 
                 
             <div>
-                <Chart3 />
+                {/* <Chart3 /> */}
             </div>
 
             <div>
                 {/* <Chart3_1 /> */}
-                <RealtimeChart />
+                {/* <Chart2 /> */}
             </div>
 
             <div className='card border-primary'>
