@@ -3,7 +3,6 @@ import React from "react";
 
 import Chart from './Chart/Chart';
 import Chart1 from './Chart/Chart1';
-import RealtimeChart from './Chart/RealtimeChart';
 import Chart2 from './Chart/Chart2';
 import Chart3 from './Chart/Chart3_0';
 import Chart3_1 from './Chart/Chart3_1';
@@ -11,6 +10,7 @@ import Chart3_1 from './Chart/Chart3_1';
 import ChartsElement1 from './ChartsElements/ChartsElement1/ChartsElement1';
 import ChartsElement2 from './ChartsElements/ChartsElement2/ChartsElement2';
 import ChartsElement3 from './ChartsElements/ChartsElement3/ChartsElement3';
+import RealtimeChart from './ChartsElements/ChartsElement4/RealtimeChart';
 import ChartsElement5 from './ChartsElements/ChartsElement5/Profile';
 
 
