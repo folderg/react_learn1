@@ -11,6 +11,7 @@ import Chart3_1 from './Chart/Chart3_1';
 import ChartsElement1 from './ChartsElements/ChartsElement1/ChartsElement1';
 import ChartsElement2 from './ChartsElements/ChartsElement2/ChartsElement2';
 import ChartsElement3 from './ChartsElements/ChartsElement3/ChartsElement3';
+import ChartsElement5 from './ChartsElements/ChartsElement5/Profile';
 
 
 import Button from 'react-bootstrap/Button';
@@ -34,7 +35,7 @@ const Charts = (props) => {
                 <RealtimeChart chartsData={props.charts.chartsData4} />                
             </div>
                 
-                
+                <ChartsElement5 />
             <div>
                 {/* <Chart3 /> */}
             </div>

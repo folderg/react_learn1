@@ -49,7 +49,7 @@ class ApexChart extends React.Component {
         this.state = {
       
         series: [{
-          data: data
+          data: data//   props.chartsData.series[0].data  
         }],
         options: {
           chart: {
@@ -98,6 +98,7 @@ class ApexChart extends React.Component {
       
       
       };
+        
     }
 
     
@@ -116,9 +117,7 @@ class ApexChart extends React.Component {
   
 
     render() {
-        
-        // const data = [];
-        // const XAXISRANGE = 77;
+        ;
         return (        
             <div id="chart">
                 <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
